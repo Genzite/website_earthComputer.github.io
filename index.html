@@ -2,10 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Tailwind Test</title>
+  <title></title>
   <link rel="stylesheet" href="./dist/output.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class="bg-blue-100 text-center p-6">
-  <h1 class="text-2xl font-bold text-blue-600">Halo Tailwind!</h1>
+<style>
+</style>
+<body class="">
+  <script src="https://kit.fontawesome.com/9e4188ea12.js" crossorigin="anonymous"></script>
+  <script src="dist/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <button class="bg-white/80 backdrop-blur-md fixed bottom-6 right-6 p-4 rounded-2xl">
+    <i class="fa-brands fa-whatsapp text-[30px] text-green-600">
+      <a class="" href="#">
+      </a>
+    </i>
+  </button>
+
+
+    <!--Navigasi bar-->
+
+    <header class="w-full h-auto fixed bg-transparent  flex z-40 my-4 px-3">
+      <nav class="container mx-auto h-[85px] bg-greenBase/70 shadow-xl shadow-greenBase backdrop-blur-xl flex items-center justify-between px-10 rounded-full">
+          <a href="index.html" class="flex items-center gap-1"  aria-label="Kembali ke Beranda Genzite ID">
+              <img src="/assets/images/logogenzite.svg" class="w-[30px] h-[60px] mb-1" loading="lazy" alt="logo genziteid">
+              <div class="text-white font-heading font-semibold text-[26px]">Earth Computer</div>
+          </a>
+
+          <div class="flex items-center justify-center gap-5">
+              <div class="hidden lg:block">
+                  <a href="../index.html" class="font-raleway font-semibold text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Beranda</a>
+                  <a href="./article/artikel-dan-project.html" class="font-raleway font-semibold text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Artikel</a>        
+              </div>
+          </div>
+
+          
+          <button id="hamburger" onclick="toggleHamburger()" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1 group">
+              <span class="block h-0.5 w-6 bg-white transition-transform duration-300 origin-center group-[.open]:rotate-45 group-[.open]:translate-y-1.5"></span>
+              <span class="block h-0.5 w-6 bg-white transition-opacity duration-300 group-[.open]:opacity-0"></span>
+              <span class="block h-0.5 w-6 bg-white transition-transform duration-300 origin-center group-[.open]:-rotate-45 group-[.open]:-translate-y-1.5"></span>
+          </button>
+          
+          
+      </nav> 
+      <!-- SIDEBAR -->
+      <div id="sidebar"
+      class="fixed z-40 top-0 right-0 h-screen w-72 bg-gray/90 backdrop-blur-md dark:bg-primaryBlue/30 transform translate-x-full transition-transform duration-500 pt-10 flex flex-col p-5 lg:hidden">
+
+      <!-- Tombol X untuk menutup -->
+      <div class="flex justify-end mb-6">
+        <button onclick="toggleHamburger()" class="w-10 h-10 relative">
+        <!-- X Icon -->
+        <span class="absolute w-6 h-0.5 bg-black rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
+        <span class="absolute w-6 h-0.5 bg-black -rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
+        </button>
+        </div>
+
+        <!-- Navigasi -->
+        
+        <a href="../index.html"
+        class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-b-4 border-supportBlue dark:border-supportPink">
+        <i class="fa-solid fa-house"></i>Beranda
+        </a>
+
+        <a href="./article/artikel-dan-project.html"
+        class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-b-4 border-supportBlue dark:border-supportPink">
+        <i class="fa-solid fa-user"></i>About Me
+        </a>
+
+        <a href="../index.html#kontakpage"
+        class="font-raleway font-semibold py-5 px-5 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-black dark:text-white text-[20px] mt-3">
+        galeri
+        </a>
+      </div>
+
+ 
+  </header>
+
+
+
+  <div class="w-full h-auto bg-[url(/assets/laptop-background-image.jpg)] bg-no-repeat md:bg-cover">
+    <div class="container mx-auto min-h-[100vh] flex justify-start items-end lg:items-center px-5 py-10">
+      <div class="flex flex-col gap-5">
+        <div class="md:w-[500px] lg:w-[650px] mt-10">
+          <div class="sr-only">
+            Butuh Service Laptop, Komputer, Earth Computer, Jasa Service Panggilan Jakarta dan Sekitarnya, Kami Siap Jemput Ke Rumah.
+          </div>
+
+          <h1 class="font-heading font-semibold text-white text-[23px] md:text-[32px] lg:text-[42px] leading-snug">
+            <span>Butuh Service 
+              <span id="typed-output" class="inline-block text-green-400"></span><span class="font-sans">?</span>
+            </span>
+            <br />
+            <span>Kami Siap Jemput ke <span class="text-green-400">Rumah!</span></span>
+          </h1>
+
+          <span class="font-paragraf font-semibold text-white text-[16px]">dengan</span>
+
+          <h2 class="font-heading font-extrabold text-[32px] lg:text-[45px] text-green-400">Earth Computer</h2>
+
+          <p class="font-paragraf text-white text-[16px] leading-5 lg:leading-7 w-[80%]">Kami adalah Jasa service komputer dan laptop panggilan ke rumah kami siap menjemput dan memperbaiki perangkat Anda langsung ke lokasi. Hubungi kami sekarang dan rasakan kemudahan servis komputer panggilan terbaik di Jakarta dan sekitarnya.</p>
+        </div>
+        <div class="flex gap-2 mt-10">
+          <button class="bg-green-500 px-7 py-2 rounded-xl">
+            <a class="text-white font-paragraf font-semibold text-[16px]" href="">Mulai</a>
+          </button>
+          <button class="border-2 border-green-400 px-4 py-2 rounded-xl">
+            <a class="text-white font-paragraf font-semibold text-[16px]" href="">Kontak Sekarang</a>
+          </button>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div class="w-full bg-secondGreen">
+    <div class="container mx-auto min-h-[300px] bg-red-300">
+      <h2></h2>
+      <div class="flex justify-center items-center gap-5">
+        <div class="bg-white rounded-lg w-full min-h-[200px]"></div>
+        <div class="bg-white rounded-lg w-full min-h-[200px]"></div>
+        <div class="bg-white rounded-lg w-full min-h-[200px]"></div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
