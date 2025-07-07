@@ -614,6 +614,10 @@ video {
   position: relative;
 }
 
+.inset-0{
+  inset: 0px;
+}
+
 .bottom-6{
   bottom: 1.5rem;
 }
@@ -636,6 +640,14 @@ video {
 
 .top-1\/2{
   top: 50%;
+}
+
+.-z-50{
+  z-index: -50;
+}
+
+.z-20{
+  z-index: 20;
 }
 
 .z-40{
@@ -893,16 +905,16 @@ video {
   background-color: rgb(255 255 255 / 0.8);
 }
 
-.bg-\[url\(\/assets\/laptop-background-image\.jpg\)\]{
-  background-image: url(/assets/laptop-background-image.jpg);
+.bg-\[url\(\'\.\.\/assets\/laptop-background-image\.jpg\'\)\]{
+  background-image: url('../assets/laptop-background-image.jpg');
 }
 
-.bg-\[url\(\.\/assets\/laptop-background-image\.jpg\)\]{
-  background-image: url(./assets/laptop-background-image.jpg);
+.bg-cover{
+  background-size: cover;
 }
 
-.bg-\[url\(\.\.\/assets\/laptop-background-image\.jpg\)\]{
-  background-image: url(../assets/laptop-background-image.jpg);
+.bg-center{
+  background-position: center;
 }
 
 .bg-no-repeat{
@@ -915,16 +927,6 @@ video {
 
 .p-5{
   padding: 1.25rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .px-4{
@@ -955,6 +957,14 @@ video {
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.pl-7{
+  padding-left: 1.75rem;
+}
+
+.pr-6{
+  padding-right: 1.5rem;
 }
 
 .pt-10{
@@ -1123,8 +1133,14 @@ video {
     width: 500px;
   }
 
-  .md\:bg-cover{
-    background-size: cover;
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .md\:text-\[32px\]{
