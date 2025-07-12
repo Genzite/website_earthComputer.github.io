@@ -30,7 +30,3 @@ new Typed(selector, {
 });
 }
 
-// Jalankan saat halaman sudah siap
-document.addEventListener('DOMContentLoaded', function () {
-initTypingEffect('#typed-output');
-});

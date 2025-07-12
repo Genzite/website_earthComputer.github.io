@@ -2,17 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
-  <link rel="stylesheet" href="./dist/output.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Computer</title>
+  <link rel="stylesheet" href="/dist/output.css" />
   <link rel="stylesheet" href="/dist/main.css">
+  
 </head>
 <body class="">
   <script src="https://kit.fontawesome.com/9e4188ea12.js" crossorigin="anonymous"></script>
-  <script src="dist/main.js"></script>
+  <script src="/dist/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="/dist/countUp.js"></script>
 
-  <button class="bg-white/70 backdrop-blur-sm fixed bottom-6 right-6 p-4 rounded-2xl">
+
+  
+
+  <button class="bg-white/80 backdrop-blur-sm fixed bottom-6 right-6 p-4 rounded-2xl z-50">
     <i class="fa-brands fa-whatsapp text-[30px] text-green-600">
       <a class="" href="#">
       </a>
@@ -23,10 +28,10 @@
     <!--Navigasi bar-->
 
     <header class="w-full h-auto fixed bg-transparent flex z-40 my-4 md:px-3">
-      <nav class="container mx-auto h-[85px] bg-greenBase/70 shadow-xl shadow-greenBase backdrop-blur-xl flex items-center justify-between pl-7 pr-6 md:px-10 rounded-full">
+      <nav class="container mx-auto h-[85px] bg-green-900/80 shadow-xl shadow-green-400 backdrop-blur-xl flex items-center justify-between pl-7 pr-6 md:px-10 rounded-full">
           <a href="index.html" class="flex items-center gap-1"  aria-label="Kembali ke Beranda Genzite ID">
               <img src="/assets/images/logogenzite.svg" class="w-[30px] h-[60px] mb-1" loading="lazy" alt="logo genziteid">
-              <div class="text-white font-heading font-semibold text-[26px]">Earth Computer</div>
+              <div class="text-white font-heading font-semibold text-[26px]">AR Computer</div>
           </a>
 
           <div class="flex items-center justify-center gap-5">
@@ -77,17 +82,17 @@
       </div>
   </header>
   
-  <div class="w-full h-auto bg-[url('../assets/laptop-office-plant-black.webp')] bg-[position:85%_90%] md:bg-cover bg-no-repeat">
-      <div class="container mx-auto min-h-[100vh] flex justify-start items-end lg:items-center px-5 py-10 z-20">
+  <div class="w-full h-auto bg-[url('../assets/image/laptop-office-plant-black.webp')] bg-[position:75%_80%] md:bg-cover bg-no-repeat">
+      <div class="container mx-auto min-h-[100vh] flex justify-start items-end lg:items-center px-10 py-10 z-20">
         <div class="flex flex-col gap-5">
             <div class="md:w-[500px] lg:w-[650px] mt-14">
                 <div class="sr-only">
                   Butuh Service Laptop, Komputer, Earth Computer, Jasa Service Panggilan Jakarta dan Sekitarnya, Kami Siap Jemput Ke Rumah.
                 </div>
       
-              <h1 class="font-heading font-semibold text-white text-[26px] md:text-[32px] lg:text-[42px] leading-snug">
+              <h1 class="font-heading font-bold text-white text-[26px] md:text-[32px] lg:text-[42px] leading-snug">
                 <span>Butuh Service 
-                  <span id="typed-output" class="inline-block text-green-300"></span><span class="font-sans">?</span>
+                  <span id="typed-output" class="inline-block text-green-400"></span><span class="font-sans">?</span>
                 </span>
                 <br />
                 <span>Kami Siap Jemput ke <span class="text-green-400">Rumah!</span></span>
@@ -95,8 +100,8 @@
       
               <span class="font-paragraf font-semibold text-white text-[16px]">dengan</span>
       
-              <h2 class="font-heading font-extrabold text-[32px] lg:text-[45px] text-green-400">Earth Computer</h2>
-                <p class="font-paragraf text-white text-[12px] md:text-[16px] leading-5 lg:leading-7 overflow-x-auto w-full">
+              <h2 class="font-heading font-extrabold text-[32px] lg:text-[45px] text-green-400">AR Computer</h2>
+                <p class="font-paragraf text-white text-[16px] leading-5 lg:leading-7 overflow-x-auto w-full">
                   Kami adalah Jasa service komputer dan laptop panggilan ke rumah. Kami siap menjemput dan memperbaiki perangkat Anda langsung ke lokasi. Hubungi kami sekarang dan rasakan kemudahan servis komputer panggilan terbaik di Jakarta dan sekitarnya.
                 </p>
 
@@ -105,10 +110,10 @@
     
             <div class="flex gap-2 md:mt-10">
               <button class="bg-green-500 px-7 py-2 rounded-xl">
-                <a class="text-white font-paragraf font-semibold text-[16px]" href="#">Mulai</a>
+                <a class="text-white font-paragraf font-semibold text-[16px] md:text-[20px]" href="#">Mulai</a>
               </button>
               <button class="border-2 border-green-400 px-4 py-2 rounded-xl">
-                <a class="text-white font-paragraf font-semibold text-[16px]" href="#">Kontak Sekarang</a>
+                <a class="text-white font-paragraf font-semibold text-[16px] md:text-[20px]" href="#">Kontak Sekarang</a>
               </button>
             </div>
         </div>
@@ -118,27 +123,141 @@
   
 
   <div class="w-full h-auto bg-secondGreen">
-    <div class="max-w-screen-lg mx-auto min-h-[300px]  px-5 py-10">
-      <h2 class="font-heading font-bold text-[32px] text-gray py-2">Layanan Kami</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 place-content-center place-items-center gap-2">
-        <div class="bg-transparent border-2 border-greenBase rounded-lg w-full min-h-[200px]">
-          <img src="" loading="lazy" alt="">
-          <h3></h3>
-          <p></p>
+    <div class="max-w-screen-lg mx-auto min-h-[300px] px-10 py-10">
+      <h2 class="font-heading font-bold text-[32px] text-gray py-2 md:w-[50%] leading-8">Solusi <span class="text-green-400"> Layanan</span> Kami untuk Kebutuhan <span class="text-green-400"> Digital</span> Anda</h2>
+      
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-5 mt-10">
+        <div class="bg-transparent rounded-lg w-full  py-4">
+          <img src="assets/icon/shipping.webp" class="size-[80px] pb-4" loading="lazy" alt="">
+        
+          <h3 class="text-white font-heading font-bold text-[20px]">Jemput & Antar Perangkat Anda Tanpa<span class="text-green-400"> Repot</span></h3>
+          <p class="font-paragraf text-white text-[14px] py-2">Dengan layanan antar dan jemput barang, anda tidak perlu keluar rumah, sekolah, dan kantor hanya untuk service.</p>
         </div>
-        <div class="bg-transparent border-2 border-greenBase rounded-lg w-full min-h-[200px]">
-          <img src="" loading="lazy" alt="">
-          <h3></h3>
-          <p></p>
+
+        <div class="bg-transparent rounded-lg w-full :min-h-[350px] md:min-h-[200px] py-4">
+          <img src="assets/icon/home_service.webp" class="size-[80px] pb-4" loading="lazy" alt="">
+        
+          <h3 class="text-white font-heading font-bold text-[20px]">Tanpa Antri, Kami<span class="text-green-400"> Datang</span> ke Tempat Anda</h3>
+          <p class="font-paragraf text-white text-[14px] py-2">Hindari membuang waktu anda dengan antrian. Cukup atur jadwal, dan kami akan datang sesuai permintaan anda</p>
         </div>
-        <div class="bg-transparent border-2 border-greenBase rounded-lg w-full min-h-[200px]">
-          <img src="" loading="lazy" alt="">
-          <h3></h3>
-          <p></p>
+
+        <div class="bg-transparent rounded-lg w-full :min-h-[350px] md:min-h-[200px] py-4">
+          <img src="assets/icon/discount.webp" class="size-[80px] pb-4" loading="lazy" alt="">
+        
+          <h3 class="text-white font-heading font-bold text-[20px]">Solusi Service <span class="text-green-400">Hemat</span> & Berkualitas</h3>
+          <p class="font-paragraf text-white text-[14px] py-2">Dapatkan layanan service profesional dengan harga yang bersahabat, tanpa menguras dompet anda</p>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="w-full min-h-[100vh] bg-white">
+    
+    <div class="container mx-auto min-h-[100vh] px-10 py-10 flex flex-col md:flex-row justify-center items-center  gap-5">
+      
+      <div class="level w-full md:w-[50%] flex flex-col items-start justify-center">
+        <h2 class="font-heading font-extrabold text-[32px] text-secondGreen leading-8 w-[100%] lg:w-[80%]">Hampir <span class="text-green-500"> Semua Merek</span> Laptop dan Komputer, Kami Layani dengan sepenuh hati</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-content-start place-items-center py-5 gap-y-2 md:gap-x-6 md:gap-y-1 lg:gap-2">
+          <div class="flex flex-row-reverse items-center justify-end gap-3 p-2 rounded-xl backdrop-blur-sm w-[180px] border-green-400 border-2">
+            <h4 class="font-paragraf font-semibold text-[16px] lg:text-[20px] w-[40%] leading-5">Total Service</h4>   
+            <div class="counter font-heading font-bold text-[20px] lg:text-[32px] w-[70px] text-green-600" id="myCounter" aria-hidden="true">0</div>
+            <p class="sr-only">Lebih dari 1000 service telah diselesaikan oleh kami, berbagai jenis laptop dan komputer telah kami selesaikan sebagai bentuk dedikasi kami kepada pelanggan</p>
+          </div>
+          <div class="flex flex-row-reverse items-center justify-end gap-3 p-2 rounded-xl bg-green-400 backdrop-blur-sm w-[180px] border-green-400 border-2">
+            <h4 class="font-paragraf font-semibold text-[16px] lg:text-[20px] text-white w-[40%] leading-5 ">Perbaikan brand</h4>   
+            <div class="counter font-heading font-bold text-[20px] lg:text-[32px] w-[50px] text-white" id="myCounter2" aria-hidden="true">0</div>
+            <p class="sr-only">Hampir semua merek laptp dan komputer sudah kami tanggani dan berhasil menyelesaikan beberapa brand terkenal seperti sony, asus, dan lenovo</p>
+          </div>
+          <div class="flex flex-row-reverse items-center justify-end gap-3 p-2 rounded-xl backdrop-blur-sm w-[180px] border-green-400 border-2">
+            <h4 class="font-paragraf font-semibold text-[16px] lg:text-[20px] text-black w-[40%] leading-5 ">Tahun Mengudara</h4>   
+            <div class="counter font-heading font-bold text-[20px] lg:text-[32px] w-[30px] text-green-500" id="myCounter3" aria-hidden="true">0</div>
+            <p class="sr-only">Hampir semua merek laptp dan komputer sudah kami tanggani dan berhasil menyelesaikan beberapa brand terkenal seperti sony, asus, dan lenovo</p>
+          </div>
+        </div>
+
+        <p class="py-2 font-paragraf font-semibold text-[16px] xl:w-[70%]">Mari percayakan kebutuhan perangkat Anda kepada kami. Dengan layanan yang hangat dan penuh kepedulian, kami hadir untuk menemani setiap langkah perbaikan. Biarkan kami bantu dengan sentuhan terbaik untuk hasil yang Anda harapkan </p>
+
+        <div class="w-full h-20 overflow-hidden relative z-10">
+
+          <div class="absolute h-full w-32 bg-gradient-to-r from-transparent to-white right-0 z-20"></div>
+          <div class="absolute h-full w-32 bg-gradient-to-r from-white to-transparent left-0 z-20"></div>
+
+          <!-- Animasi logo -->
+          <div class="flex items-center justify-center animate-scroll gap-5">
+            <!-- 1x Logo Set -->
+            <template id="logo-set">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px]  mx-2" src="assets/image/acer.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/asus.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[60px] mx-2" src="assets/image/hp.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/lenovo.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/samsung.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/sony.webp" alt="">
+              
+            </template>
+        
+            <!-- Duplikat isi 2x -->
+            <div class="flex items-center gap-5">
+              <!-- Set 1 -->
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/acer.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/asus.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[60px] mx-2" src="assets/image/hp.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/lenovo.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/samsung.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/sony.webp" alt="">
+              <!-- Set 2 (duplikat) -->
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/acer.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/asus.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[60px] mx-2" src="assets/image/hp.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/lenovo.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/samsung.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/sony.webp" alt="">
+              <!-- Set 3 (duplikat) -->
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/acer.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/asus.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[60px] mx-2" src="assets/image/hp.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/lenovo.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/samsung.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/sony.webp" alt="">
+              <!-- Set 4 (duplikat) -->
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/acer.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/asus.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[60px] mx-2" src="assets/image/hp.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/lenovo.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/samsung.webp" alt="">
+              <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/sony.webp" alt="">
+             
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="md:w-[50%] md:h-[100vh] flex items-center justify-center py-5">
+          <div class="grid grid-cols-2 gap-1 w-[300px] md:w-[300px] lg:w-[400px] h-[400px] md:h-[500px] lg:h-[500px]">
+            <div class=" flex items-end">
+              <img src="assets/image/laptop-office-plant-black.webp" class="h-[80%] object-cover rounded-[32px] rounded-br-none" alt="">
+            </div>
+            <div class="">
+              <img src="assets/image/laptop-office-plant-black.webp" class="h-full object-cover rounded-[32px] rounded-bl-none" alt="">
+              
+            </div>
+            <div class="">
+              <img src="assets/image/laptop-office-plant-black.webp" class="h-full object-cover rounded-[32px] rounded-tr-none" alt="">
+              
+            </div>
+            <div class="">
+              <img src="assets/image/laptop-office-plant-black.webp" class="h-[80%] object-cover rounded-[32px] rounded-tl-none" alt="">
+          
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<div class="w-full h-auto bg-red-400">
+  <div class="container mx-auto min-h-[100vh]"></div>
+</div>
 
 </body>
 </html>
