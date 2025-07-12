@@ -59,15 +59,15 @@ const animationFrameIds = {};
                 // Panggil dengan simbol yang berbeda
                 animateCountUp('myCounter', 0, 500, 6000, '+'); // Contoh: +1500
                 animateCountUp('myCounter2', 0, 10, 2500, '+'); // Contoh: ^2000
-                animateCountUp('myCounter3', 0, 3, 1500, ''); // Tanpa simbol (atau angka desimal bisa diatur jika perlu)
+                animateCountUp('myCounter3', 0, 2, 1500, '+'); // Tanpa simbol (atau angka desimal bisa diatur jika perlu)
             }, 150);
         }
 
         document.addEventListener('DOMContentLoaded', () => {
             // Inisialisasi awal dengan simbol
             animateCountUp('myCounter', 0, 1000, 2000, '+');
-            animateCountUp('myCounter2', 0, 500, 1500, '^');
-            animateCountUp('myCounter3', 0, 49, 1500, ''); // Misalnya untuk rating, tanpa simbol depan
+            animateCountUp('myCounter2', 0, 10, 2500, '+');
+            animateCountUp('myCounter3', 0, 2, 1500, '+'); // Misalnya untuk rating, tanpa simbol depan
         });
 
         window.addEventListener('scroll', handleScroll);
