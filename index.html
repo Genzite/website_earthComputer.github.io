@@ -1,94 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AR Computer</title>
   <link rel="stylesheet" href="dist/output.css" />
   <link rel="stylesheet" href="dist/main.css">
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dark_mode" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body class="">
-  <script src="https://kit.fontawesome.com/9e4188ea12.js" crossorigin="anonymous"></script>
-  <script src="dist/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="dist/countUp.js"></script>
+  
+ 
 
-  <button class="bg-white/80 backdrop-blur-sm fixed bottom-6 right-6 p-4 rounded-2xl z-50">
-    <i class="fa-brands fa-whatsapp text-[30px] text-green-600">
-      <a class="" href="#">
+
+  
+
+  <button class="bg-white/80 dark:bg-black/80 dark:hover:bg-green-400 hover:bg-green-400 backdrop-blur-sm fixed bottom-6 right-6 p-4 rounded-2xl z-50 border-2 border-green-400 duration-500 text-green-600 dark:text-green-400 dark:hover:text-white hover:text-white shadow-xl hover:shadow-green-400">
+    <a class="" href="#">
+        <i class="fa-brands fa-whatsapp text-[35px]">
+        </i>
       </a>
-    </i>
   </button>
-
-
     <!--Navigasi bar-->
-
-    <header class="w-full h-auto fixed bg-transparent flex z-40 my-4 md:px-3">
-      <nav class="container mx-auto h-[85px] bg-green-900/80 shadow-xl shadow-green-400 backdrop-blur-xl flex items-center justify-between pl-7 pr-6 md:px-10 rounded-full">
-          <a href="index.html" class="flex items-center gap-1"  aria-label="Kembali ke Beranda Genzite ID">
-              <img src="/assets/images/logogenzite.svg" class="w-[30px] h-[60px] mb-1" loading="lazy" alt="logo genziteid">
+    <header class="w-full h-auto fixed bg-transparent flex z-40 my-2 md:px-3">
+      <nav class="container mx-auto h-[85px] bg-green-900/80 shadow-xl shadow-green-400 backdrop-blur-md flex items-center justify-between pl-7 pr-6 md:px-10 rounded-full">
+          <a href="index.html" class="flex items-center gap-2"  aria-label="Kembali ke Beranda Genzite ID">
+              <img src="assets/image/logo_ar_final.webp" class="h-[40px] w-[50px]" loading="lazy" alt="logo genziteid">
               <div class="text-white font-heading font-semibold text-[26px]">AR Computer</div>
           </a>
 
           <div class="flex items-center justify-center gap-5">
               <div class="hidden lg:block">
-                  <a href="../index.html" class="font-raleway font-semibold text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Beranda</a>
-                  <a href="./article/artikel-dan-project.html" class="font-raleway font-semibold text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Artikel</a>        
-              </div>
-          </div>
+                  <a href="#BerandaPage" class="font-paragraf font-semibold text-white hover:text-green-400 text-[18px] p-5 hover:border-green-400 hover:border-b-2 transition-all duration-100">Beranda</a>
 
-          
-          <button id="hamburger" onclick="toggleHamburger()" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1 group">
-              <span class="block h-0.5 w-6 bg-white transition-transform duration-300 origin-center group-[.open]:rotate-45 group-[.open]:translate-y-1.5"></span>
-              <span class="block h-0.5 w-6 bg-white transition-opacity duration-300 group-[.open]:opacity-0"></span>
-              <span class="block h-0.5 w-6 bg-white transition-transform duration-300 origin-center group-[.open]:-rotate-45 group-[.open]:-translate-y-1.5"></span>
-          </button>
-          
-          
+                  <a href="#LayananPage" class="font-paragraf font-semibold text-white hover:text-green-400 text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-2 transition-all duration-100">Layanan</a>
+
+                  <a href="#ServicePage" class="font-paragraf font-semibold text-white hover:text-green-400 text-[18px] p-5 hover:border-green-400 hover:border-b-2 transition-all duration-100">Service</a>
+
+                  <a href="#GaleriPage" class="font-paragraf font-semibold text-white hover:text-green-400 text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-2 transition-all duration-100">Galeri</a>        
+                  
+                  <a href="#KontakPage" class="font-paragraf font-semibold text-white hover:text-green-400 text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-2 transition-all duration-100">Kontak</a>        
+                </div>
+                <div class="flex flex-row-reverse gap-2 items-center ">
+                  <button id="hamburger" onclick="toggleHamburger()" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1 group">
+                    <span class="block h-0.5 w-6 bg-white transition-transform duration-300 origin-center group-[.open]:rotate-45 group-[.open]:translate-y-1.5"></span>
+                    <span class="block h-0.5 w-6 bg-white transition-opacity duration-300 group-[.open]:opacity-0"></span>
+                    <span class="block h-0.5 w-6 bg-white transition-transform duration-300 origin-center group-[.open]:-rotate-45 group-[.open]:-translate-y-1.5"></span>
+                  </button>
+                  
+  
+                    <button onclick="toggleDarkMode()" class="material-symbols-outlined text-yellow-400 dark:text-blue-400 hover:text-blue-500 duration-200 cursor-pointer">
+                      dark_mode
+                    </button>
+                </div>
+              </div>
+              
       </nav> 
+
+
       <!-- SIDEBAR -->
       <div id="sidebar"
-      class="fixed z-40 top-0 right-0 h-screen w-72 bg-gray/90 backdrop-blur-md dark:bg-primaryBlue/30 transform translate-x-full transition-transform duration-500 pt-10 flex flex-col p-5 lg:hidden">
+      class="fixed z-40 top-0 right-0 h-screen w-72 bg-black/50 backdrop-blur-lg dark:bg-primaryBlue/30 transform translate-x-full transition-transform duration-500 pt-10 flex flex-col p-5 lg:hidden">
 
       <!-- Tombol X untuk menutup -->
       <div class="flex justify-end mb-6">
         <button onclick="toggleHamburger()" class="w-10 h-10 relative">
         <!-- X Icon -->
-        <span class="absolute w-6 h-0.5 bg-black rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
-        <span class="absolute w-6 h-0.5 bg-black -rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
+        <span class="absolute w-6 h-0.5 bg-white rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
+        <span class="absolute w-6 h-0.5 bg-white -rotate-45 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
         </button>
         </div>
 
         <!-- Navigasi -->
-        
-        <a href="../index.html"
-        class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-b-4 border-supportBlue dark:border-supportPink">
-        <i class="fa-solid fa-house"></i>Beranda
-        </a>
+        <a href="#BerandaPage" class="font-paragraf font-semibold text-white hover:text-green-400 text-[18px] p-5 hover:border-green-400 hover:border-b-2 transition-all duration-100">Beranda</a>
 
-        <a href="./article/artikel-dan-project.html"
-        class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-b-4 border-supportBlue dark:border-supportPink">
-        <i class="fa-solid fa-user"></i>About Me
-        </a>
+                  <a href="#LayananPage" class="font-paragraf font-semibold text-white hover:text-green-400 text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-2 transition-all duration-100">Layanan</a>
 
-        <a href="../index.html#kontakpage"
-        class="font-raleway font-semibold py-5 px-5 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-black dark:text-white text-[20px] mt-3">
-        galeri
-        </a>
+                  <a href="#ServicePage" class="font-paragraf font-semibold text-white hover:text-green-400 text-[18px] p-5 hover:border-green-400 hover:border-b-2 transition-all duration-100">Service</a>
+
+                  <a href="#GaleriPage" class="font-paragraf font-semibold text-white hover:text-green-400 text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-2 transition-all duration-100">Galeri</a>        
+                  
+                  <a href="#KontakPage" class="font-paragraf font-semibold text-white hover:text-green-400 text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-2 transition-all duration-100">Kontak</a>      
       </div>
   </header>
   
   <div class="w-full h-auto bg-[url('../assets/image/laptop-office-plant-black.webp')] bg-[position:75%_80%] md:bg-cover bg-no-repeat">
-      <div class="container mx-auto min-h-[100vh] flex justify-start items-end lg:items-center px-10 py-10 z-20">
+      <div id="BerandaPage" class="container mx-auto min-h-[100vh] flex justify-start items-end lg:items-center px-10 py-10 z-20">
         <div class="flex flex-col gap-5">
             <div class="md:w-[500px] lg:w-[650px] mt-14">
                 <div class="sr-only">
                   Butuh Service Laptop, Komputer, Earth Computer, Jasa Service Panggilan Jakarta dan Sekitarnya, Kami Siap Jemput Ke Rumah.
                 </div>
       
-              <h1 class="font-heading font-bold text-white text-[26px] md:text-[32px] lg:text-[42px] leading-snug">
-                <span>Butuh Service 
+              <h1 class="font-heading font-bold text-white text-[32px] lg:text-[42px] leading-snug">
+                <span>Butuh Service <br class="block md:hidden"> 
                   <span id="typed-output" class="inline-block text-green-400"></span><span class="font-sans">?</span>
                 </span>
                 <br />
@@ -97,20 +104,20 @@
       
               <span class="font-paragraf font-semibold text-white text-[16px]">dengan</span>
       
-              <h2 class="font-heading font-extrabold text-[32px] lg:text-[45px] text-green-400">AR Computer</h2>
-                <p class="font-paragraf text-white text-[16px] leading-5 lg:leading-7 overflow-x-auto w-full">
+              <h2 data-aos="fade-up" data-aos-duration="1500" class="font-heading font-extrabold text-[32px] lg:text-[45px] text-green-400">AR Computer</h2>
+                <p data-aos="fade-up" data-aos-duration="1500" class="font-paragraf text-white text-[16px] leading-5 lg:leading-7 overflow-x-auto w-full">
                   Kami adalah Jasa service komputer dan laptop panggilan ke rumah. Kami siap menjemput dan memperbaiki perangkat Anda langsung ke lokasi. Hubungi kami sekarang dan rasakan kemudahan servis komputer panggilan terbaik di Jakarta dan sekitarnya.
                 </p>
 
 
             </div>
     
-            <div class="flex gap-2 md:mt-10">
-              <button class="bg-green-500 px-7 py-2 rounded-xl">
-                <a class="text-white font-paragraf font-semibold text-[16px] md:text-[20px]" href="#">Mulai</a>
+            <div class="flex gap-3 md:mt-10">
+              <button class="bg-green-400 hover:bg-green-500 px-7 py-2 rounded-xl shadow-xl hover:shadow-green-500 duration-500">
+                <a class="text-white font-paragraf font-semibold text-[16px] md:text-[20px]" href="#LayananPage">Mulai</a>
               </button>
-              <button class="border-2 border-green-400 px-4 py-2 rounded-xl">
-                <a class="text-white font-paragraf font-semibold text-[16px] md:text-[20px]" href="#">Kontak Sekarang</a>
+              <button class="hover:bg-green-500 border-2 border-green-400 px-4 py-2 rounded-xl shadow-xl hover:shadow-green-500 duration-500">
+                <a class="text-white font-paragraf font-semibold text-[16px] md:text-[20px]" href="#KontakPage">Kontak Sekarang</a>
               </button>
             </div>
         </div>
@@ -119,69 +126,71 @@
   </div>
   
 
-  <div class="w-full h-auto bg-secondGreen">
-    <div class="max-w-screen-lg mx-auto min-h-[300px] px-10 py-10">
-      <h2 class="font-heading font-bold text-[32px] text-gray py-2 md:w-[50%] leading-8">Solusi <span class="text-green-400"> Layanan</span> Kami untuk Kebutuhan <span class="text-green-400"> Digital</span> Anda</h2>
+  <div id="LayananPage" class="w-full h-auto bg-greenBase dark:bg-night scroll-mt-[110px]">
+    <div  class="max-w-screen-lg mx-auto min-h-[300px] px-10 py-10 ">
+      <h2 data-aos="fade-up" data-aos-duration="1500" class="font-heading font-bold text-[32px] text-white py-2 md:w-[50%] leading-10 mx-auto text-center">Solusi <span class="text-green-300"> Layanan</span> Kami untuk Kebutuhan <span class="text-green-300"> Digital</span> Anda</h2>
       
       <div class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-5 mt-10">
-        <div class="bg-transparent rounded-lg w-full  py-4">
+        <div data-aos="fade-up" data-aos-duration="1000" class="bg-transparent rounded-lg w-full  py-4">
           <img src="assets/icon/shipping.webp" class="size-[80px] pb-4" loading="lazy" alt="">
         
-          <h3 class="text-white font-heading font-bold text-[20px]">Jemput & Antar Perangkat Anda Tanpa<span class="text-green-400"> Repot</span></h3>
-          <p class="font-paragraf text-white text-[14px] py-2">Dengan layanan antar dan jemput barang, anda tidak perlu keluar rumah, sekolah, dan kantor hanya untuk service.</p>
+          <h3 class="text-white font-heading font-bold text-[20px]">Jemput & Antar Perangkat Anda Tanpa<span class="text-green-300"> Repot</span></h3>
+          <p class="font-paragraf text-gray text-[14px] py-2">Dengan layanan antar dan jemput barang, anda tidak perlu keluar rumah, sekolah, dan kantor hanya untuk service.</p>
         </div>
 
-        <div class="bg-transparent rounded-lg w-full :min-h-[350px] md:min-h-[200px] py-4">
+        <div data-aos="fade-up" data-aos-duration="2000" class="bg-transparent rounded-lg w-full :min-h-[350px] md:min-h-[200px] py-4">
           <img src="assets/icon/home_service.webp" class="size-[80px] pb-4" loading="lazy" alt="">
         
-          <h3 class="text-white font-heading font-bold text-[20px]">Tanpa Antri, Kami<span class="text-green-400"> Datang</span> ke Tempat Anda</h3>
-          <p class="font-paragraf text-white text-[14px] py-2">Hindari membuang waktu anda dengan antrian. Cukup atur jadwal, dan kami akan datang sesuai permintaan anda</p>
+          <h3 class="text-white font-heading font-bold text-[20px]">Tanpa Antri, Kami<span class="text-green-300"> Datang</span> ke Tempat Anda</h3>
+          <p class="font-paragraf text-gray text-[14px] py-2">Hindari membuang waktu anda dengan antrian. Cukup atur jadwal, dan kami akan datang sesuai permintaan anda</p>
         </div>
 
-        <div class="bg-transparent rounded-lg w-full :min-h-[350px] md:min-h-[200px] py-4">
+        <div data-aos="fade-up" data-aos-duration="3000" class="bg-transparent rounded-lg w-full :min-h-[350px] md:min-h-[200px] py-4">
           <img src="assets/icon/discount.webp" class="size-[80px] pb-4" loading="lazy" alt="">
         
-          <h3 class="text-white font-heading font-bold text-[20px]">Solusi Service <span class="text-green-400">Hemat</span> & Berkualitas</h3>
-          <p class="font-paragraf text-white text-[14px] py-2">Dapatkan layanan service profesional dengan harga yang bersahabat, tanpa menguras dompet anda</p>
+          <h3 class="text-white font-heading font-bold text-[20px]">Solusi Service <span class="text-green-300">Hemat</span> & Berkualitas</h3>
+          <p class="font-paragraf text-gray text-[14px] py-2">Dapatkan layanan service profesional dengan harga yang bersahabat, tanpa menguras dompet anda</p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="w-full min-h-[100vh] bg-white">
-    
-    <div class="container mx-auto min-h-[100vh] px-10 py-10 flex flex-col md:flex-row justify-center items-center  gap-5">
-      
+  <div class="w-full min-h-[100vh] bg-white dark:bg-black z-0">
+    <div id="ServicePage" class="container mx-auto min-h-[100vh] px-10 py-10 flex flex-col md:flex-row justify-center items-center relative gap-5 z-20 scroll-mt-20">  
+      <!-- element tambahan --> 
+      <div class="hidden lg:block absolute lg:right-32 size-96 bg-green-500 blur-[50px] rounded-full -z-20"></div>
+
+
       <div class="level w-full md:w-[50%] flex flex-col items-start justify-center">
-        <h2 class="font-heading font-extrabold text-[32px] text-secondGreen leading-8 w-[100%] lg:w-[80%]">Hampir <span class="text-green-500"> Semua Merek</span> Laptop dan Komputer, Kami Layani dengan sepenuh hati</h2>
+        <h2 data-aos="fade-up" data-aos-duration="3000" class="font-heading font-extrabold text-[32px] text-secondGreen dark:text-white md:leading-10 lg:leading-8 w-[100%] lg:w-[80%]">Hampir <span class="text-green-500"> Semua </span><span class="bg-green-400 text-white px-2">Merek</span> <span class="underline underline-offset-2 decoration-green-400">Laptop</span> dan <span class="underline underline-offset-2 decoration-green-400">Komputer</span>, Kami Layani dengan sepenuh hati</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-content-start place-items-center py-5 gap-y-2 md:gap-x-6 md:gap-y-1 lg:gap-2">
-          <div class="flex flex-row-reverse items-center justify-end gap-3 p-2 rounded-xl backdrop-blur-sm w-[180px] border-green-400 border-2">
-            <h4 class="font-paragraf font-semibold text-[16px] lg:text-[20px] w-[40%] leading-5">Total Service</h4>   
-            <div class="counter font-heading font-bold text-[20px] lg:text-[32px] w-[70px] text-green-600" id="myCounter" aria-hidden="true">0</div>
+          <div data-aos="fade-in" data-aos-duration="1000" class="flex flex-row-reverse items-center justify-end gap-3 p-2 rounded-xl backdrop-blur-sm w-[180px] border-green-400 border-2">
+            <h4 class="font-paragraf font-semibold text-[16px] dark:text-white lg:text-[20px] w-[40%] leading-5">Total Service</h4>   
+            <div class="counter font-heading font-bold text-[20px] lg:text-[32px] w-[50px] lg:w-[70px] text-green-500" id="myCounter" aria-hidden="true">0</div>
             <p class="sr-only">Lebih dari 1000 service telah diselesaikan oleh kami, berbagai jenis laptop dan komputer telah kami selesaikan sebagai bentuk dedikasi kami kepada pelanggan</p>
           </div>
-          <div class="flex flex-row-reverse items-center justify-end gap-3 p-2 rounded-xl bg-green-400 backdrop-blur-sm w-[180px] border-green-400 border-2">
+          <div data-aos="fade-in" data-aos-duration="2000" class="flex flex-row-reverse items-center justify-end gap-3 p-2 rounded-xl bg-green-600 backdrop-blur-sm w-[180px] border-green-400 border-2">
             <h4 class="font-paragraf font-semibold text-[16px] lg:text-[20px] text-white w-[40%] leading-5 ">Perbaikan brand</h4>   
-            <div class="counter font-heading font-bold text-[20px] lg:text-[32px] w-[50px] text-white" id="myCounter2" aria-hidden="true">0</div>
+            <div class="counter font-heading font-bold text-[20px] lg:text-[32px] w-[30px] lg:w-[50px] text-white" id="myCounter2" aria-hidden="true">0</div>
             <p class="sr-only">Hampir semua merek laptp dan komputer sudah kami tanggani dan berhasil menyelesaikan beberapa brand terkenal seperti sony, asus, dan lenovo</p>
           </div>
-          <div class="flex flex-row-reverse items-center justify-end gap-3 p-2 rounded-xl backdrop-blur-sm w-[180px] border-green-400 border-2">
-            <h4 class="font-paragraf font-semibold text-[16px] lg:text-[20px] text-black w-[40%] leading-5 ">Tahun Beroperasi</h4>   
+          <div data-aos="fade-in" data-aos-duration="3000" class="flex flex-row-reverse items-center justify-end gap-3 p-2 rounded-xl backdrop-blur-sm w-[180px] border-green-400 border-2">
+            <h4 class="font-paragraf font-semibold text-[16px] lg:text-[20px] text-black dark:text-white w-[40%] leading-5 ">Tahun Beroperasi</h4>   
             <div class="counter font-heading font-bold text-[20px] lg:text-[32px] w-[30px] text-green-500" id="myCounter3" aria-hidden="true">0</div>
-            <p class="sr-only">Hampir semua merek laptp dan komputer sudah kami tanggani dan berhasil menyelesaikan beberapa brand terkenal seperti sony, asus, dan lenovo</p>
+            <p class="sr-only">Kami sudah beroperasi melayani customer selama kurang lebih 3 tahun, dan kami selalu siap malayani customer sampai waktu yang tidak ditentukan</p>
           </div>
         </div>
 
-        <p class="py-2 font-paragraf font-semibold text-[16px] xl:w-[70%]">Mari percayakan kebutuhan perangkat Anda kepada kami. Dengan layanan yang hangat dan penuh kepedulian, kami hadir untuk menemani setiap langkah perbaikan. Biarkan kami bantu dengan sentuhan terbaik untuk hasil yang Anda harapkan </p>
+        <p data-aos="fade-right" data-aos-duration="2000" class="py-2 font-paragraf text-[16px] dark:text-white xl:w-[70%]">Percayakan kebutuhan perangkat Anda kepada kami. Dengan layanan yang hangat dan penuh kepedulian, kami hadir untuk menemani setiap langkah perbaikan. Biarkan kami bantu dengan sentuhan terbaik untuk hasil yang Anda harapkan </p>
 
-        <div class="w-full h-20 overflow-hidden relative z-10">
+        <div class="w-full h-20 overflow-hidden relative z-10 dark:bg-white rounded-lg py-2 mt-5 flex items-center">
 
           <div class="absolute h-full w-32 bg-gradient-to-r from-transparent to-white right-0 z-20"></div>
           <div class="absolute h-full w-32 bg-gradient-to-r from-white to-transparent left-0 z-20"></div>
 
           <!-- Animasi logo -->
-          <div class="flex items-center justify-center animate-scroll gap-5">
+          <div class="flex items-center justify-center animate-scroll gap-5 ">
             <!-- 1x Logo Set -->
             <template id="logo-set">
               <img loading="lazy" role="listitem" class="w-[100px] h-[100px]  mx-2" src="assets/image/acer.webp" alt="">
@@ -230,21 +239,21 @@
         </div>
 
       </div>
-      <div class="md:w-[50%] md:h-[100vh] flex items-center justify-center py-5">
-          <div class="grid grid-cols-2 gap-1 w-[300px] md:w-[300px] lg:w-[400px] h-[400px] md:h-[500px] lg:h-[500px]">
+      <div data-aos="fade-in" data-aos-duration="3000" class="md:w-[50%] h-full flex items-start justify-center py-5">
+          <div class="grid grid-cols-2 gap-1 w-[300px] h-[400px] lg:w-[500px] lg:h-[700px]">
             <div class=" flex items-end">
-              <img src="assets/image/laptop-office-plant-black.webp" class="h-[80%] object-cover rounded-[32px] rounded-br-none" alt="">
+              <img src="assets/image_service/IMG-5.webp" class="h-[80%]  w-full object-cover rounded-[32px] rounded-br-none" alt="">
             </div>
             <div class="">
-              <img src="assets/image/laptop-office-plant-black.webp" class="h-full object-cover rounded-[32px] rounded-bl-none" alt="">
+              <img src="assets/image_service/IMG-4.webp" class="h-full object-cover rounded-[32px] rounded-bl-none" alt="">
               
             </div>
             <div class="">
-              <img src="assets/image/laptop-office-plant-black.webp" class="h-full object-cover rounded-[32px] rounded-tr-none" alt="">
+              <img src="assets/image_service/IMG.jpg" class="h-full object-cover rounded-[32px] rounded-tr-none" alt="">
               
             </div>
             <div class="">
-              <img src="assets/image/laptop-office-plant-black.webp" class="h-[80%] object-cover rounded-[32px] rounded-tl-none" alt="">
+              <img src="assets/image_service/IMG-3.webp" class="h-[80%] w-full object-cover rounded-[32px] rounded-tl-none" alt="">
           
             </div>
           </div>
@@ -252,9 +261,108 @@
     </div>
   </div>
 
-<div class="w-full h-auto bg-greenBase">
-  <div class="container mx-auto min-h-[100vh]"></div>
-</div>
+  <div id="GaleriPage" class="w-full h-auto bg-greenBase dark:bg-night scroll-mt-14">
+    <div class="container mx-auto min-h-[100vh] p-10 flex flex-col justify-center">
+      <h2 data-aos="fade-up" data-aos-duration="2500" class="font-heading font-bold  text-white text-[32px]  my-10 leading-9"><span class="text-green-300">Dokumentasi</span><br> Pengerjaan Service Kami</h2>   
 
+      <div data-aos="fade-in" data-aos-duration="2000" class="w-full h-auto relative">
+        <div class="absolute right-0 bg-gradient-to-l from-night to-transparent md:w-5 h-full overflow-x-hidden "></div>
+        <div class="absolute left-0 bg-gradient-to-r from-night to-transparent md:w-5 h-full overflow-x-hidden "></div>
+
+        <div class="flex overflow-x-auto scroll-custom gap-2 py-2 w-full">
+          <img src="assets/image_service/IMG-1.webp" class="w-[900px] h-[400px] object-cover rounded-2xl" alt="">
+          <img src="assets/image_service/IMG-2.webp" class="w-[900px] h-[400px] object-cover rounded-2xl" alt="">
+          <img src="assets/image_service/IMG-3.webp" class="w-[900px] h-[400px] object-cover rounded-2xl" alt="">
+          <img src="assets/image_service/IMG-4.webp" class="w-[900px] h-[400px] object-cover rounded-2xl" alt="">
+          <img src="assets/image_service/IMG-5.webp" class="w-[900px] h-[400px] object-cover rounded-2xl" alt="">
+          <img src="assets/image_service/IMG-6.webp" class="w-[900px] h-[400px] object-cover rounded-2xl" alt="">
+       
+        </div>
+      </div>
+      
+
+               
+
+                  
+
+    </div> 
+  </div>
+
+  <div class="w-full h-auto bg-white dark:bg-black flex -z-30">
+    <div id="KontakPage" class="container mx-auto min-h-[100vh] flex flex-col justify-center items-center px-10 py-10 -z-0">
+      <h2 data-aos="fade-up" data-aos-duration="3000" class="text-secondGreen font-extrabold text-[30px] lg:text-[42px] xl:text-[50px] text-center dark:text-white my-5 leading-10 lg:leading-[65px] xl:leading-[80px]"><span class="text-green-400">Mau service</span> laptop atau komputer namun <span class="bg-green-400 text-white px-3 -inset-5 rounded-md">terkendala</span> <span class="underline underline-offset-8 decoration-green-400 decoration-rounded">waktu</span> dan <span class="underline underline-offset-8 decoration-green-400 decoration-rounded">antrean?</span>
+      </h2>
+
+      <p data-aos="fade-up" data-aos-duration="1000" class="font-paragraf font-medium text-center text-[16px] md:text-[20px] dark:text-white w-full lg:w-[60%] leading-1">Kami hadir dengan <span class="text-green-600 font-semibold">layanan antar-jemput</span> dan <span class="text-green-600 font-semibold">perbaikan</span> di <span class="underline decoration-4 underline-offset-4 decoration-green-600">tempat Anda</span>, silakan hubungi kami sekarang untuk konsultasi dan <span class="bg-green-500 px-2 py-[2px] rounded-md text-white">penjadwalan.</span></p>
+
+      <div class="my-5 flex  items-center gap-1 mt-10">
+        <button data-aos="fade-down" data-aos-duration="3000" class="bg-green-400 hover:bg-green-500 py-3 px-3 md:px-6 rounded-lg font-paragraf font-semibold text-[16px] lg:text-[18px] text-white duration-500 shadow-xl hover:shadow-green-400"></a><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/628151844958?text=Halo%20AR%20Computer%2C%20saya%20ingin%20konsultasi%20terkait%20layanan%20Home%20Service.%20Mohon%20informasinya.%20Terima%20kasih." target="_blank" aria-label="Chat via WhatsApp" target="_blank"">Chat Kami</button>
+        <button data-aos="fade-down" data-aos-duration="3000" class="border-2 border-green-400 hover:bg-green-500 py-3 px-4 md:px-10 rounded-lg font-paragraf font-semibold text-[16px] lg:text-[18px] text-greenBase hover:text-white dark:text-white duration-500 shadow-xl hover:shadow-green-400"></a><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/6287742217980?text=Halo%20AR%20Computer%2C%20saya%20ingin%20konsultasi%20terkait%20layanan%20Home%20Service.%20Mohon%20informasinya.%20Terima%20kasih." target="_blank"> Chat Toko Kami</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer page -->
+  <footer class="w-full h-auto bg-secondGreen dark:bg-gradient-to-b  dark:from-black dark:to-night " role="contentinfo">
+    <div class="container mx-auto p-10 flex flex-col lg:flex-row justify-center items-center gap-14 dark:border-t-2 lg:dark:border-white/80">
+        <div class="flex flex-col justify-center text-center gap-2">
+            <img src="assets/image/logo_ar_final.webp" class="size-[80px] mx-auto" loading="lazy" alt="Logo Genzite">
+            <h4 class="font-heading font-semibold text text-white text-[20px]">
+            <span class="text-green-400">AR</span><span> Computer</span>
+            </h4>
+            <h2 class="mx-auto font-paragraf font-medium text-white text-[14px] text-center w-[70%]">
+                 Adalah jasa home service laptop dan komputer untuk daerah sekitar Jakarta dan Tangerang Selatan   
+            </h2>
+        </div> 
+        <div class="flex gap-5">
+            <nav aria-label="Footer Navigation Menu" class="flex flex-col p-4">
+                <h3 class="text-white text-[20px] font-montserrat font-bold mb-4">Navigasi</h3>
+
+                  <a href="#BerandaPage" class="font-paragraf font-semibold text-white/50 hover:text-white text-[18px] duration-500 py-2">Beranda</a>
+
+                  <a href="#LayananPage" class="font-paragraf font-semibold text-white/50 hover:text-white text-[18px] duration-500 py-2">Layanan</a>
+
+                  <a href="#ServicePage" class="font-paragraf font-semibold text-white/50 hover:text-white text-[18px] duration-500 py-2">Service</a>
+
+                  <a href="#GaleriPage" class="font-paragraf font-semibold text-white/50 hover:text-white text-[18px] duration-500 py-2">Galeri</a>        
+                  
+                  <a href="#KontakPage" class="font-paragraf font-semibold text-white/50 hover:text-white text-[18px]  duration-500 py-2">Kontak</a>        
+                
+            </nav>
+            
+            <section aria-label="Contact information" class="flex flex-col p-4">
+                <h3 class="text-white text-[20px] font-montserrat font-bold mb-4">Kontak</h3>
+                <span class="flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-white"></i>
+                    <a class="font-paragraf font-semibold text-white/50 py-2" href="https://wa.me/628151844958?text=Halo%20AR%20Computer%2C%20saya%20ingin%20konsultasi%20terkait%20layanan%20Home%20Service.%20Mohon%20informasinya.%20Terima%20kasih." aria-label="Chat via WhatsApp">WhatsApp</a>
+                </span>
+                <span class="flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-white"></i>
+                    <a class="font-paragraf font-semibold text-white/50 py-2" href="https://wa.me/6287742217980?text=Halo%20AR%20Computer%2C%20saya%20ingin%20konsultasi%20terkait%20layanan%20Home%20Service.%20Mohon%20informasinya.%20Terima%20kasih." target="_blank">
+                    WhatsApp Store</a>
+                </span>
+                
+                <span class="flex items-center gap-2">
+                    <i class="fas fa-envelope text-white"></i>
+                    <a class="font-paragraf font-semibold text-white/50 py-2" href="mailto:arcomputerjakarta@gmail.com?subject=Service%20AR%20Computer&body=Halo%20AR%20Computer,%0ASaya%20ingin%20bertanya%20mengenai%20layanan%20home%20service.%0AMohon%20informasinya.%0ATerima%20kasih." aria-label="Visit Email Profile">Gmail</a>
+                </span>
+            </section>
+        </div>
+      </div>
+      <div class="flex justify-center py-10">
+        <small class="text-[12px] xl:text-[16px] text-white/80">&copy; AR Computer 2025 - 2026 | Dikembangkan Oleh <a href="https://genzite.my.id/" class="text-blue-500">Genzite</a></small>
+      </div>
+</footer>
+
+
+  <script src="https://kit.fontawesome.com/9e4188ea12.js" crossorigin="anonymous"></script>
+  <script src="dist/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+  <script src="dist/slide.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
