@@ -173,7 +173,7 @@
     <div id="ServicePage" class="container mx-auto min-h-[100vh] px-10 py-10 flex flex-col md:flex-row justify-center items-center relative gap-5 z-20 scroll-mt-20">
       <div class="hidden lg:block absolute lg:right-32 size-96 bg-green-500 blur-[50px] rounded-full -z-20"></div>
       <div class="level w-full md:w-[50%] flex flex-col items-start justify-center">
-        <h2 data-aos="fade-up" data-aos-duration="3000" class="font-heading font-extrabold text-[32px] text-secondGreen dark:text-white md:leading-10 lg:leading-8 w-full lg:w-[80%]">
+        <h2 data-aos="fade-up" data-aos-duration="3000" class="font-heading font-extrabold text-[32px] text-secondGreen dark:text-white md:leading-10 lg:leading-10 w-full lg:w-[80%]">
           Kami Layani <span class="text-green-500">Semua Merek</span> <span class="bg-green-400 text-white px-2">Laptop</span> & <span class="underline underline-offset-2 decoration-green-400">Komputer</span> di <span class="underline underline-offset-2 decoration-green-400">Jakarta</span> & <span class="underline underline-offset-2 decoration-green-400">Tangerang Selatan</span>
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-content-start place-items-center py-5 gap-y-2 md:gap-x-6 md:gap-y-1 lg:gap-2">
@@ -194,35 +194,70 @@
         <div class="w-full h-20 overflow-hidden relative z-10 dark:bg-white rounded-lg py-2 mt-5 flex items-center">
           <div class="absolute h-full w-32 bg-gradient-to-r from-transparent to-white right-0 z-20"></div>
           <div class="absolute h-full w-32 bg-gradient-to-r from-white to-transparent left-0 z-20"></div>
-          <div class="flex items-center justify-center animate-scroll gap-5" aria-label="Brand yang kami layani">
-            <div class="flex items-center gap-5">
-              <img loading="lazy" class="w-[100px] h-[100px] mx-2" src="assets/image/acer.webp" alt="Service Acer di Jakarta dan Tangsel">
-              <img loading="lazy" class="w-[100px] h-[100px] mx-2" src="assets/image/asus.webp" alt="Perbaikan Asus onsite">
-              <img loading="lazy" class="w-[100px] h-[60px] mx-2" src="assets/image/hp.webp" alt="Jasa Service HP Laptop">
-              <img loading="lazy" class="w-[100px] h-[100px] mx-2" src="assets/image/lenovo.webp" alt="Layanan Lenovo Tangerang Selatan">
-              <img loading="lazy" class="w-[100px] h-[100px] mx-2" src="assets/image/samsung.webp" alt="Service Komputer Samsung onsite">
-              <img loading="lazy" class="w-[100px] h-[100px] mx-2" src="assets/image/sony.webp" alt="Jasa Service Sony Laptop Jakarta">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-aos="fade-in" data-aos-duration="3000" class="md:w-[50%] h-full flex items-start justify-center py-5">
-        <div class="grid grid-cols-2 gap-1 w-[300px] h-[400px] lg:w-[500px] lg:h-[700px]">
-          <div class="flex items-end">
-            <img src="assets/image_service/IMG-5.webp" class="h-[80%] w-full object-cover rounded-[32px] rounded-br-none" alt="Teknisi AR Computer sedang memperbaiki perangkat pelanggan">
-          </div>
-          <div>
-            <img src="assets/image_service/IMG-4.webp" class="h-full object-cover rounded-[32px] rounded-bl-none" alt="Proses service onsite di rumah customer">
-          </div>
-          <div>
-            <img src="assets/image_service/IMG.jpg" class="h-full object-cover rounded-[32px] rounded-tr-none" alt="AR Computer perbaiki laptop di kantor klien">
-          </div>
-          <div>
-            <img src="assets/image_service/IMG-3.webp" class="h-[80%] w-full object-cover rounded-[32px] rounded-tl-none" alt="Pelanggan puas dengan service komputer AR Computer">
+         <!-- Animasi logo -->
+         <div class="flex items-center justify-center animate-scroll gap-5 ">
+          <!-- 1x Logo Set -->
+          <template id="logo-set">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px]  mx-2" src="assets/image/acer.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/asus.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[60px] mx-2" src="assets/image/hp.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/lenovo.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/samsung.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/sony.webp" alt="">            
+          </template>      
+          <!-- Duplikat isi 2x -->
+          <div class="flex items-center gap-5">
+            <!-- Set 1 -->
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/acer.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/asus.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[60px] mx-2" src="assets/image/hp.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/lenovo.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/samsung.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/sony.webp" alt="">
+            <!-- Set 2 (duplikat) -->
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/acer.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/asus.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[60px] mx-2" src="assets/image/hp.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/lenovo.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/samsung.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/sony.webp" alt="">
+            <!-- Set 3 (duplikat) -->
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/acer.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/asus.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[60px] mx-2" src="assets/image/hp.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/lenovo.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/samsung.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/sony.webp" alt="">
+            <!-- Set 4 (duplikat) -->
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/acer.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/asus.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[60px] mx-2" src="assets/image/hp.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/lenovo.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/samsung.webp" alt="">
+            <img loading="lazy" role="listitem" class="w-[100px] h-[100px] mx-2" src="assets/image/sony.webp" alt="">
           </div>
         </div>
       </div>
     </div>
+    <div data-aos="fade-in" data-aos-duration="3000" class="md:w-[50%] h-full flex items-start justify-center py-5">
+      <div class="grid grid-cols-2 gap-1 w-[300px] h-[400px] lg:w-[500px] lg:h-[700px]">
+        <div class="flex items-end">
+          <img src="assets/image_service/IMG-5.webp" class="h-[80%] w-full object-cover rounded-[32px] rounded-br-none" alt="Teknisi AR Computer sedang memperbaiki perangkat pelanggan">
+        </div>
+        <div>
+          <img src="assets/image_service/IMG-4.webp" class="h-full object-cover rounded-[32px] rounded-bl-none" alt="Proses service onsite di rumah customer">
+        </div>
+        <div>
+          <img src="assets/image_service/IMG.jpg" class="h-full object-cover rounded-[32px] rounded-tr-none" alt="AR Computer perbaiki laptop di kantor klien">
+        </div>
+        <div>
+          <img src="assets/image_service/IMG-3.webp" class="h-[80%] w-full object-cover rounded-[32px] rounded-tl-none" alt="Pelanggan puas dengan service komputer AR Computer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
     <div id="GaleriPage" class="w-full h-auto bg-greenBase dark:bg-night scroll-mt-14">
       <div class="container mx-auto min-h-[100vh] p-10 flex flex-col justify-center">
         <h2 data-aos="fade-up" data-aos-duration="2500" class="font-heading font-bold text-white text-[32px] my-10 leading-9">
