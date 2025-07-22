@@ -16,7 +16,7 @@ html.dark ::-webkit-scrollbar-track {
 
 ::-webkit-scrollbar-thumb {
   background: #27AE60; /* biru tailwind (blue-500) */
-  border-radius: 9999px;
+  border-radius: 40px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
