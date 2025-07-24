@@ -22,6 +22,25 @@
 
     gtag('config', 'AW-17387668200');
   </script>
+  
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17387668200/jiGFCKnKkPcaEOiFi-NA',
+          'value': 1.0,
+          'currency': 'IDR',
+          'transaction_id': '',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+  
 
   <meta name="description" content="Teknisi ahli AR Computer siap melayani service komputer dan laptop on-site di Jakarta & Tangerang Selatan. Perbaikan hardware, software, upgrade, tanpa antre, datang ke lokasi Anda. Hubungi kami!">
   <meta name="keywords" content="service komputer Tangerang Selatan, service laptop Jakarta Selatan, teknisi komputer ke rumah, servis komputer Pamulang, jasa IT onsite BSD, Ciputat, Pondok Cabe, service panggilan, service on-site, service laptop dan komputer, service disekitar anda">
@@ -75,11 +94,13 @@
   <span class="sr-only">
     AR Computer menyediakan layanan service komputer dan laptop onsite untuk wilayah Tangerang Selatan, Jakarta Selatan, dan sekitarnya. Layanan kami cepat, profesional, dan dapat diandalkan.
   </span>
-  <a href="https://wa.me/628151844958?text=Halo%20AR%20Computer%2C%20saya%20ingin%20konsultasi%20terkait%20layanan%20Home%20Service.%20Mohon%20informasinya.%20Terima%20kasih." aria-label="Chat via WhatsApp">
+    <a href="https://wa.me/628151844958?text=Halo%20AR%20Computer%2C%20saya%20ingin%20konsultasi%20terkait%20layanan%20Home%20Service.%20Mohon%20informasinya.%20Terima%20kasih."
+    onclick="return gtag_report_conversion(this.href);" aria-label="Chat via WhatsApp">
     <button class="bg-white/80 dark:bg-black/80 dark:hover:bg-green-400 hover:bg-green-400 backdrop-blur-sm fixed bottom-6 right-6 p-4 rounded-2xl z-50 border-2 border-green-400 duration-500 text-green-600 dark:text-green-400 dark:hover:text-white hover:text-white shadow-xl hover:shadow-green-400">
       <i class="fa-brands fa-whatsapp text-[35px]"></i>
     </button>
   </a>
+
 
   <header class="w-full h-auto fixed bg-transparent flex z-40 my-2 md:px-3">
     <nav class="container mx-auto h-[85px] bg-green-900/80 shadow-xl shadow-green-400 backdrop-blur-md flex items-center justify-between pl-7 pr-6 md:px-10 rounded-full">
